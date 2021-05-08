@@ -87,7 +87,7 @@ exports.signin = (req, res)=>{
     // console.log('87 auth.controller: ','\nZZZZ user: ',user
     //                                   ,'\nCCCC user.roles[i]: ',user.roles[i]
     //                                   ,'\nRRRR user.roles[i].username: ', user.roles[i].name)    
-   authorties.push('ROLE_' +user.roles[i].name.toLowerCase());
+   authorties.push('ROLE_' +user.roles[i].name.toUpperCase());
   }
   res.status(200).send({
    id: user._id,

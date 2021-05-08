@@ -1,0 +1,9 @@
+.navbar{
+ display: flex;
+}
+
+.navbar .log_in_out{
+ display: flex;
+ flex-direction: row;
+}
+
