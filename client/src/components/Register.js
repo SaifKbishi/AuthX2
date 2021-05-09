@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 import AuthService from "../services/auth.service";
-import './components.css'
 
 const required = (value) => {
   if (!value) {
@@ -90,9 +89,6 @@ const Register = (props) => {
           setSuccessful(true);
         },
         (error) => {
-          console.log('error.response', error.response)
-          console.log('error.response.data', error.response.data)
-          console.log('error.response.data.message',error.response.data.message)
           const resMessage = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
 
           setMessage(resMessage);

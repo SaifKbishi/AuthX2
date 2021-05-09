@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <br/>           
             Stay Focused
-        </header>
+        </header> */}
       </BrowserRouter>
     </div>
   );
